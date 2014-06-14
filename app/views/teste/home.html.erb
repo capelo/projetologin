@@ -1,0 +1,9 @@
+<h1>Login</h1>
+<% if current_user %>
+	<h2>Você está ONLINE PELO FACEBOOK</h2>
+	<%= link_to "Efetuar logout", logout_path, method: :delete, id: "logout-link" %>
+<% else %>
+	<%= link_to "Login com Facebook", "/auth/facebook" %>
+<% end %>
+
+
